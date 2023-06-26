@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build a Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Enter your name: <input id="name" name="name" type="text" placeholder="your name" required></label>
+      <label for="email" id="email-label">Enter your email: <input id="email" name="email" type="email" placeholder="your email" required></label>
+      <label for="number" id="number-label">Enter your age: <input id="number" name="number" type="number" min="13" max="99" pattern="[0-9]" placeholder="age"></label>
+    </fieldset>
+    <fieldset>
+      <label for="dropdown">What is your favourite colour? <select id="dropdown" name="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">Red</option>
+        <option value="2">Yellow</option>
+        <option value="3">Blue</option>
+        <option value="4">Orange</option>
+        <option value="5">Green</option>
+        <option value="6">Purple</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      <p>Enter your gender:</p>
+      <label for="gender-male"><input id="gender-male" type="radio" name="gender-type"> Male</label>
+      <label for="gender-female"><input id="gender-female" type="radio" name="gender-type" class="inline"> Female</label>
+      <label for="gender-nonbinary"><input id="gender-nonbinary" type="radio" name="gender-type" class="inline"> Non-binary</label>
+      <label></label>
+    </fieldset>
+
+  </form>
+  
+
+
+</body>
+
+
+</html>
